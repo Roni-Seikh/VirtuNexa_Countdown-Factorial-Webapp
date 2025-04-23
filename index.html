@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown & Factorial App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <!-- Header -->
+    <header>
+      <h1>🕒 Countdown Timer & 🧮 Factorial Calculator</h1>
+      <p>A mini web app combining time-tracking with math fun!</p>
+    </header>
+
+    <!-- Countdown Timer Section -->
+    <section class="card" id="countdown-timer">
+      <h2>⏳ Countdown Timer</h2>
+      <label for="target-date">Select your target date & time:</label>
+      <input type="datetime-local" id="target-date" />
+      <button onclick="startCountdown()">Start Countdown</button>
+
+      <div id="countdown">
+        <div><span id="days">0</span><small>Days</small></div>
+        <div><span id="hours">0</span><small>Hours</small></div>
+        <div><span id="minutes">0</span><small>Minutes</small></div>
+        <div><span id="seconds">0</span><small>Seconds</small></div>
+      </div>
+    </section>
+
+    <!-- Divider -->
+    <hr />
+
+    <!-- Factorial Calculator Section -->
+    <section class="card" id="factorial-calculator">
+      <h2>🧠 Factorial Calculator</h2>
+      <label for="number">Enter a non-negative integer:</label>
+      <input type="number" id="number" min="0" placeholder="e.g., 5" />
+
+      <div class="button-group">
+        <button onclick="calculateIterative()">Iterative Method</button>
+        <button onclick="calculateRecursive()">Recursive Method</button>
+      </div>
+
+      <div id="factorial-output" class="output-box"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with ❤️ using HTML, CSS, and JavaScript</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

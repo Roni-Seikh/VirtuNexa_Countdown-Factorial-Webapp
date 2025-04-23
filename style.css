@@ -1,0 +1,157 @@
+/* Reset and body styling */
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Container card */
+.container {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Header styling */
+h1, h2 {
+  color: #333;
+  margin-bottom: 10px;
+  animation: slideIn 0.7s ease-in-out;
+}
+
+p {
+  color: #555;
+}
+
+/* Input styles */
+input[type="datetime-local"],
+input[type="number"] {
+  padding: 12px;
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/* Button styles */
+button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 8px;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #0088cc);
+  transform: scale(1.05);
+}
+
+/* Countdown display */
+#countdown {
+  margin-top: 25px;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+#countdown div {
+  background: #f0f9ff;
+  border: 1px solid #cce7ff;
+  border-radius: 12px;
+  padding: 15px;
+  width: 100%;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+#countdown span {
+  display: block;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+#countdown small {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Output styling */
+.output-box {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 15px;
+  background: #e6f7ff;
+  border: 1px solid #91d5ff;
+  border-radius: 12px;
+  animation: fadeIn 0.7s ease;
+}
+
+/* Button group layout */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Divider */
+hr {
+  margin: 50px 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #007bff, transparent);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-30px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
