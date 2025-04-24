@@ -99,4 +99,3 @@ B.Tech CSE | Web & App Developer | Data Enthusiast
 ## 📃 License
 
 This project is licensed under the MIT License.
-```
